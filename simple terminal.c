@@ -6,7 +6,7 @@
 #include <sys/wait.h>
 #include <unistd.h>
 #define TOKEN_SIZE 64	// token size used for each parsed string
-
+//A simple terminal programmed in C, implementation of process and threads
 int main()
 {
 	char **args;    // data storage for parsed string 	
@@ -15,7 +15,7 @@ int main()
 	//Continous loop of do-while loop untill user enters quit 
 	do {
 		char *strng;
-	       	if ((strng= readline ("minor2> " )) != NULL )
+	       	if ((strng= readline ("$USER$>> " )) != NULL )
 		{	
 			//variable used to parse user input string strng
 			int num = TOKEN_SIZE, index = 0;  
